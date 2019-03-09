@@ -1,0 +1,36 @@
+Catalogue {
+    margin-top: 34px;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-sizing: border-box;
+}
+
+Authors {
+    display: table;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+Authors > Author
+{
+    display: table-row;
+}
+
+Movies {
+    display: table;
+    border: 1px solid black;
+}
+
+Movie > Author {
+    content: attr(z:Ref);
+}
+
+Movie > Author,
+Budget,
+Description,
+Rating,
+ReleaseDate,
+Title {
+    display: table-row;
+}
+

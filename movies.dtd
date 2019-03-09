@@ -1,0 +1,36 @@
+<!ELEMENT Catalogue (AuthorRepository, MovieRepository)> 
+<!ATTLIST Catalogue
+    xmlns:i CDATA #IMPLIED
+    xmlns CDATA #IMPLIED
+>
+
+<!ELEMENT AuthorRepository (Authors)>
+<!ATTLIST AuthorRepository
+    z:Id ID #REQUIRED
+    xmlns:z CDATA #IMPLIED
+>
+
+<!ELEMENT Authors (Author*)>
+<!ELEMENT Author (FirstName*, LastName*)>
+<!ATTLIST Author
+    z:Id ID #IMPLIED
+    z:Ref NMTOKEN #IMPLIED
+>
+
+<!ELEMENT FirstName (#PCDATA)>
+<!ELEMENT LastName (#PCDATA)>
+
+<!ELEMENT MovieRepository (Movies)>
+<!ATTLIST MovieRepository
+    z:Id ID #REQUIRED
+    xmlns:z CDATA #IMPLIED
+>
+
+<!ELEMENT Movies (Movie*)>
+<!ELEMENT Movie (Author, Budget, Description, Rating, ReleaseDate, Title)>
+
+<!ELEMENT Budget (#PCDATA)>
+<!ELEMENT Description (#PCDATA)>
+<!ELEMENT Rating (#PCDATA)>
+<!ELEMENT ReleaseDate (#PCDATA)>
+<!ELEMENT Title (#PCDATA)>
