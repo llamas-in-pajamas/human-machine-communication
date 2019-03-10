@@ -1,7 +1,18 @@
 ﻿using System;
 using System.Runtime.Serialization;
+using System.Xml.Serialization;
+
 namespace FilmLibrary
 {
+    public enum Genre
+    {
+        Comedy,
+        Action,
+        Adventure,
+        Drama,
+        Horror
+    }
+
     [DataContract]
     public class Movie
     {
@@ -17,5 +28,7 @@ namespace FilmLibrary
         public int Budget { get; set; }
         [DataMember]
         public double Rating { get; set; }
+        [DataMember]
+        public Genre Genre { get; set; }
     }
 }

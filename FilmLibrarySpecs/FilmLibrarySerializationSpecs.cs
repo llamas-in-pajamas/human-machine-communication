@@ -11,6 +11,7 @@ namespace UnitTestProject1
     {
         private Random gen = new Random();
         private Catalogue catalogue = new Catalogue();
+        private Array genres = Enum.GetValues(typeof(Genre));
 
         DateTime RandomDay()
         {
@@ -30,6 +31,7 @@ namespace UnitTestProject1
 
         Movie MovieFactory()
         {
+            
             return new Movie()
             {
                 Author = catalogue.AuthorRepository.Authors[gen.Next(4)],
@@ -37,7 +39,8 @@ namespace UnitTestProject1
                 ReleaseDate = RandomDay(),
                 Description = Faker.Lorem.Paragraph(),
                 Rating = Math.Round((gen.NextDouble() * 10.0), 2, MidpointRounding.ToEven),
-                Title = Faker.Lorem.Sentence()
+                Title = Faker.Lorem.Sentence(),
+                Genre = (Genre)genres.GetValue(gen.Next(genres.Length))
             };
         }
 
