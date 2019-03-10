@@ -2,7 +2,7 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using FilmLibrary;
 using XMLUtil;
-using System.Collections.Generic;
+using System.IO;
 
 namespace UnitTestProject1
 {
@@ -64,7 +64,9 @@ namespace UnitTestProject1
         [TestMethod]
         public void DtdXmlTest()
         {
-            XML.ReadXMLwithDTD(@"movies_2.xml");
+            string workingDirectory = Environment.CurrentDirectory;
+            string projectDirectory = Directory.GetParent(workingDirectory).Parent.FullName;
+            XML.ReadXMLwithDTD($"{projectDirectory}/movies.xml");
         }
     }
 }
