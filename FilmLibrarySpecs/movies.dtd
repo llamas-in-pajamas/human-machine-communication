@@ -27,11 +27,12 @@
 >
 
 <!ELEMENT Movies (Movie*)>
-<!ELEMENT Movie (Author, Budget, Description, Rating, ReleaseDate, Title, Genre)>
+<!ELEMENT Movie (Author, Budget, Description, Rating, ReleaseDate, Title)>
+
+<!ATTLIST Movie genre (drama|horror|action|adventure) #REQUIRED>
 
 <!ELEMENT Budget (#PCDATA)>
 <!ELEMENT Description (#PCDATA)>
 <!ELEMENT Rating (#PCDATA)>
 <!ELEMENT ReleaseDate (#PCDATA)>
 <!ELEMENT Title (#PCDATA)>
-<!ELEMENT Genre (#PCDATA)>

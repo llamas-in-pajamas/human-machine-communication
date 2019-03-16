@@ -24,115 +24,103 @@
  </AuthorRepository>
  <MovieRepository z:Id="i6" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/">
   <Movies>
-   <Movie>
+   <Movie genre="horror">
     <Author z:Ref="i2" />
     <Budget>1767430113</Budget>
     <Description>Et ut reprehenderit officia dicta a totam. Temporibus omnis dolorem expedita. Illo ut sequi maiores similique.</Description>
-    <Genre>Horror</Genre>
     <Rating>2.46</Rating>
     <ReleaseDate>1998-10-23T00:00:00</ReleaseDate>
     <Title>Voluptatum et nemo et et ut odio.</Title>
    </Movie>
-   <Movie>
+   <Movie genre="adventure">
     <Author z:Ref="i5" />
     <Budget>1538066485</Budget>
     <Description>Totam sit vero voluptatem eius molestiae ut optio quia. Incidunt in in vitae minus ex repellat quasi expedita. Neque assumenda molestiae voluptatem et quia animi sint est. Est et repellat ipsa.</Description>
-    <Genre>Adventure</Genre>
     <Rating>1.41</Rating>
     <ReleaseDate>1997-11-20T00:00:00</ReleaseDate>
     <Title>Possimus delectus quas aut et.</Title>
    </Movie>
-   <Movie>
+   <Movie genre="horror">
     <Author z:Ref="i2" />
     <Budget>2002615246</Budget>
     <Description>Nihil ad eveniet et modi cumque voluptatem ut consequatur. Est eum cumque sunt. Et explicabo eum ab molestiae quasi non. Culpa sed omnis aut iure dolores sapiente accusantium recusandae.</Description>
-    <Genre>Horror</Genre>
     <Rating>7.33</Rating>
     <ReleaseDate>1998-12-16T00:00:00</ReleaseDate>
     <Title>Et eius quae facere velit autem eius excepturi.</Title>
    </Movie>
-   <Movie>
+   <Movie genre="action">
     <Author z:Ref="i4" />
     <Budget>1098256789</Budget>
     <Description>Iure non dolorum libero nihil. Sit quibusdam aut provident. Quos veniam voluptatem iure praesentium est officiis quae.</Description>
-    <Genre>Action</Genre>
     <Rating>3.9</Rating>
     <ReleaseDate>2006-01-30T00:00:00</ReleaseDate>
     <Title>Aperiam cum quia quibusdam accusamus dolores.</Title>
    </Movie>
-   <Movie>
+   <Movie genre="horror">
     <Author z:Ref="i4" />
     <Budget>1599671054</Budget>
     <Description>Fugiat esse natus non consequatur consectetur. Qui nemo delectus corrupti earum. Ab quia fugit qui omnis. Vel sint quos quidem totam officiis. Quo sunt dolorem quibusdam.</Description>
-    <Genre>Horror</Genre>
     <Rating>7.88</Rating>
     <ReleaseDate>2017-12-09T00:00:00</ReleaseDate>
     <Title>Quaerat quia ut ab sed incidunt error voluptatum magni.</Title>
    </Movie>
-   <Movie>
+   <Movie genre="action">
     <Author z:Ref="i4" />
     <Budget>136654976</Budget>
     <Description>Voluptates iste laudantium aut fuga rerum. Qui id enim vitae sed laboriosam omnis explicabo. Distinctio voluptatum incidunt voluptatem.</Description>
-    <Genre>Action</Genre>
     <Rating>8.81</Rating>
     <ReleaseDate>2008-01-18T00:00:00</ReleaseDate>
     <Title>Aperiam tempora qui aut alias inventore rerum.</Title>
    </Movie>
-   <Movie>
+   <Movie genre="adventure">
     <Author z:Ref="i4" />
     <Budget>352945761</Budget>
     <Description>Placeat animi quasi qui voluptates. Nisi dicta qui ratione et consectetur. Ipsa vel impedit laboriosam dolores molestias illum et eum.</Description>
-    <Genre>Adventure</Genre>
     <Rating>6.06</Rating>
     <ReleaseDate>2002-08-12T00:00:00</ReleaseDate>
     <Title>Voluptates officiis voluptas facilis et fuga necessitatibus autem reiciendis.</Title>
    </Movie>
-   <Movie>
+   <Movie genre="action">
     <Author z:Ref="i5" />
     <Budget>969446995</Budget>
     <Description>Recusandae ut quae sit facilis. Reprehenderit sunt quia vero voluptas. Omnis et nostrum porro placeat.</Description>
-    <Genre>Action</Genre>
     <Rating>4.92</Rating>
     <ReleaseDate>2006-02-04T00:00:00</ReleaseDate>
     <Title>Totam expedita sint animi neque vero culpa.</Title>
    </Movie>
-   <Movie>
+   <Movie genre="adventure">
     <Author z:Ref="i5" />
     <Budget>1649168725</Budget>
     <Description>Aliquam aliquid tempore quod rerum impedit. Dignissimos nostrum hic et quas voluptatem quod dolorem illo. Illo et at suscipit. Ipsa quia maiores ut esse.</Description>
-    <Genre>Adventure</Genre>
     <Rating>5.55</Rating>
     <ReleaseDate>2001-09-15T00:00:00</ReleaseDate>
     <Title>Odit consectetur id debitis saepe non.</Title>
    </Movie>
-   <Movie>
+   <Movie genre="horror">
     <Author z:Ref="i3" />
     <Budget>1787560001</Budget>
     <Description>Aut voluptas quasi consectetur nulla. Quibusdam autem sapiente qui quia est. Eum non ut error. Dicta enim aliquid possimus. Exercitationem perspiciatis laboriosam aut ut maiores est.</Description>
-    <Genre>Horror</Genre>
     <Rating>5.94</Rating>
     <ReleaseDate>2003-11-19T00:00:00</ReleaseDate>
     <Title>Voluptates consequatur accusamus molestiae est.</Title>
    </Movie>
-   <Movie>
+   <Movie genre="horror">
     <Author z:Ref="i2" />
     <Budget>1706145217</Budget>
     <Description>Maxime et non voluptatem tenetur labore. Repellat ea architecto aut voluptas et maxime. Fugiat ut qui omnis est molestias quia. Aut aliquid veritatis ut assumenda labore.</Description>
-    <Genre>Horror</Genre>
     <Rating>5.4</Rating>
     <ReleaseDate>2000-10-03T00:00:00</ReleaseDate>
     <Title>Aut aut ut quidem nisi et qui id facilis.</Title>
    </Movie>
-   <Movie>
+   <Movie genre="horror">
     <Author z:Ref="i5" />
     <Budget>120498854</Budget>
     <Description>Maxime enim perferendis veniam provident neque. Eaque culpa asperiores sit sit reiciendis. Autem est libero saepe aut temporibus. Blanditiis enim et molestiae neque ea dignissimos aut. Dicta quisquam nam ipsum culpa dolor temporibus.</Description>
-    <Genre>Horror</Genre>
     <Rating>3.18</Rating>
     <ReleaseDate>2017-03-17T00:00:00</ReleaseDate>
     <Title>Non aut minima sed.</Title>
    </Movie>
-   <Movie>
+   <Movie genre="horror">
     <Author z:Ref="i4" />
     <Budget>689708983</Budget>
     <Description>Aut distinctio et ad. Et placeat vitae consectetur. Quis repellat voluptatem vero consequatur omnis quae. Ut voluptates ullam ex. Voluptas laborum recusandae mollitia commodi accusamus excepturi iste.</Description>
@@ -141,106 +129,95 @@
     <ReleaseDate>2013-11-25T00:00:00</ReleaseDate>
     <Title>Laudantium est perspiciatis quas.</Title>
    </Movie>
-   <Movie>
+   <Movie genre="drama">
     <Author z:Ref="i2" />
     <Budget>1027761535</Budget>
     <Description>Perspiciatis suscipit quidem rem officia nostrum dolor rerum numquam. Laboriosam incidunt quia aliquid. Temporibus non pariatur vitae distinctio dolorem totam eum numquam.</Description>
-    <Genre>Drama</Genre>
     <Rating>5.21</Rating>
     <ReleaseDate>2012-03-18T00:00:00</ReleaseDate>
     <Title>Voluptatem voluptatem sed autem enim eos veniam officiis.</Title>
    </Movie>
-   <Movie>
+   <Movie genre="drama">
     <Author z:Ref="i3" />
     <Budget>247130139</Budget>
     <Description>Nam aut modi omnis iusto exercitationem eum. Provident veniam eum repellendus error. Sit expedita in excepturi maxime architecto hic nihil autem. Qui facilis voluptatem et corporis illo ex.</Description>
-    <Genre>Drama</Genre>
     <Rating>3.45</Rating>
     <ReleaseDate>2018-11-24T00:00:00</ReleaseDate>
     <Title>Et quia consequuntur facilis.</Title>
    </Movie>
-   <Movie>
+   <Movie genre="drama">
     <Author z:Ref="i4" />
     <Budget>1346268390</Budget>
     <Description>Officiis dicta sit nobis qui. Commodi ut qui exercitationem sed rerum commodi. Ex et et sunt distinctio voluptate. Doloremque deleniti eveniet voluptatum molestiae voluptas et et.</Description>
-    <Genre>Drama</Genre>
     <Rating>5.55</Rating>
     <ReleaseDate>2010-12-06T00:00:00</ReleaseDate>
     <Title>Quis doloremque et quis officiis maiores voluptas id qui.</Title>
    </Movie>
-   <Movie>
+   <Movie genre="adventure">
     <Author z:Ref="i4" />
     <Budget>1983435737</Budget>
     <Description>Accusamus laborum aspernatur ipsum asperiores est similique optio. Iste ut quia iusto voluptas est quis quia totam. Et qui ut et quia. Beatae dolores consequatur eos. Eligendi id harum sed neque et et.</Description>
-    <Genre>Adventure</Genre>
     <Rating>1.84</Rating>
     <ReleaseDate>2003-06-20T00:00:00</ReleaseDate>
     <Title>Recusandae quidem exercitationem unde ut.</Title>
    </Movie>
-   <Movie>
+   <Movie genre="action">
     <Author z:Ref="i5" />
     <Budget>1746224334</Budget>
     <Description>At aperiam vel deleniti provident non est ad. Sit est molestiae voluptatem sint adipisci sed fugiat vel. Ut corrupti ipsam cum quod atque ut provident soluta.</Description>
-    <Genre>Action</Genre>
     <Rating>0.25</Rating>
     <ReleaseDate>2015-06-15T00:00:00</ReleaseDate>
     <Title>Sit similique aut aut ad.</Title>
    </Movie>
-   <Movie>
+   <Movie genre="adventure">
     <Author z:Ref="i3" />
     <Budget>481013862</Budget>
     <Description>Eum ut voluptas consequuntur ex dolor fugiat dolor officiis. Sit odio sunt quo. Hic eum aliquam ut ex rerum asperiores. Qui non quasi omnis omnis in vel.</Description>
-    <Genre>Adventure</Genre>
     <Rating>8.23</Rating>
     <ReleaseDate>2017-02-12T00:00:00</ReleaseDate>
     <Title>Eligendi minus numquam qui velit aut odit magni eos.</Title>
    </Movie>
-   <Movie>
+   <Movie genre="drama">
     <Author z:Ref="i5" />
     <Budget>1811950942</Budget>
     <Description>Quod sint labore fugit totam reiciendis neque. Sit nobis odit ut iure. Quis adipisci quis esse quasi animi. Veniam voluptas nihil officiis.</Description>
-    <Genre>Drama</Genre>
     <Rating>2.94</Rating>
     <ReleaseDate>2017-08-21T00:00:00</ReleaseDate>
     <Title>Dolor nulla quisquam consequuntur ea.</Title>
    </Movie>
-   <Movie>
+   <Movie genre="comedy">
     <Author z:Ref="i5" />
     <Budget>1098579073</Budget>
     <Description>Necessitatibus aut est tenetur nostrum repellendus. Provident vero consequatur et accusamus veritatis. Minus voluptates voluptas quisquam.</Description>
-    <Genre>Comedy</Genre>
     <Rating>8.53</Rating>
     <ReleaseDate>2010-03-15T00:00:00</ReleaseDate>
     <Title>Sapiente omnis praesentium amet sed labore quia quibusdam.</Title>
    </Movie>
-   <Movie>
+   <Movie genre="comedy">
     <Author z:Ref="i4" />
     <Budget>677004314</Budget>
     <Description>Veniam deserunt enim consequatur qui corrupti molestias suscipit quia. Amet non nihil voluptatem architecto. Velit aut fugit consequatur. Soluta quod sed eum molestiae.</Description>
-    <Genre>Comedy</Genre>
     <Rating>2.37</Rating>
     <ReleaseDate>2010-09-05T00:00:00</ReleaseDate>
     <Title>Sequi quo dicta doloribus aut ut delectus quisquam.</Title>
    </Movie>
-   <Movie>
+   <Movie genre="action">
     <Author z:Ref="i5" />
     <Budget>74679032</Budget>
     <Description>Dolorum et ea molestias. Corrupti omnis voluptatem aperiam et praesentium ut. Est velit facere laborum. At sequi quia voluptatem quibusdam aliquid dolorum.</Description>
-    <Genre>Action</Genre>
     <Rating>2.69</Rating>
     <ReleaseDate>2017-11-16T00:00:00</ReleaseDate>
     <Title>Exercitationem vitae natus praesentium.</Title>
    </Movie>
-   <Movie>
+   <Movie genre="adventure">
     <Author z:Ref="i2" />
     <Budget>1283551357</Budget>
     <Description>Qui quos officiis ea est vitae. Nisi consequatur qui dolorem eligendi. Beatae corporis ut numquam aliquid sed.</Description>
-    <Genre>Adventure</Genre>
     <Rating>3.6</Rating>
     <ReleaseDate>2017-01-20T00:00:00</ReleaseDate>
     <Title>Dignissimos aut animi dignissimos illo.</Title>
    </Movie>
-   <Movie>
+   <Movie genre="drama">
     <Author z:Ref="i4" />
     <Budget>1903021613</Budget>
     <Description>Eligendi praesentium sunt ut quam. Et adipisci voluptas ut quo occaecati animi vel. Fuga ut expedita qui sapiente asperiores. Ut aut voluptatum eos sapiente.</Description>
