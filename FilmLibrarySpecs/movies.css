@@ -1,36 +1,168 @@
+* {
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
 Catalogue {
-    margin-top: 34px;
-    padding-left: 15px;
-    padding-right: 15px;
-    box-sizing: border-box;
+  background-image: url("./content/pics/thR2V2U09D.jpg");
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100vh;
+}
+
+Catalogue::before {
+  content: "Michał Chudzik & Rafał Plinzner";
+  position: sticky;
+  display: block;
+  top: 0%;
+  text-align: center;
+  color: white;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 Authors {
-    display: table;
-    border-radius: 5px;
-    border: 1px solid black;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  margin-left: 30px;
+  margin-right: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+  margin-top: 34px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
-Authors > Author
-{
-    display: table-row;
+Authors Author {
+  margin: 10px 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+Author FirstName,
+Author LastName {
+  align-self: center;
+}
+
+Authors Author::after {
+  content: "Id autora: " attr(author_id);
+  text-align: center;
+}
+
+Author[author_id="i2"] Portrait {
+  content: url("https://s3.amazonaws.com/uifaces/faces/twitter/ricburton/128.jpg");
+}
+
+Author[author_id="i3"] Portrait {
+  content: url("https://s3.amazonaws.com/uifaces/faces/twitter/ludwiczakpawel/128.jpg");
+}
+
+Author[author_id="i4"] Portrait {
+  content: url("https://s3.amazonaws.com/uifaces/faces/twitter/ilya_pestov/128.jpg");
+}
+
+Author[author_id="i5"] Portrait {
+  content: url("https://s3.amazonaws.com/uifaces/faces/twitter/francis_vega/128.jpg");
+}
+
+Author Portrait {
+  margin-bottom: 10px;
+  border-radius: 100%;
+  width: 100px;
+  transition: 0.5s;
+}
+Author Portrait:hover {
+  width: 120px;
 }
 
 Movies {
-    display: table;
-    border: 1px solid black;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-left: 15px;
+  padding-right: 15px;
+  justify-content: space-around;
 }
 
-Movie > Author {
-    content: attr(z:Ref);
+Movie {
+  background-color: rgba(0, 0, 0, 0.4);
+  color: white;
+  border-radius: 10px;
+  margin: 0 15px;
+  display: flex;
+  margin-top: 15px;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+  flex-grow: 1.5;
+  width: 400px;
+  padding: 15px 10px;
+  line-height: 120%;
+  transition: 0.5s;
 }
 
-Movie > Author,
-Budget,
-Description,
-Rating,
-ReleaseDate,
-Title {
-    display: table-row;
+Movie,
+Movie Author::before {
+  content: "Id autora: " attr(ref) "";
 }
 
+Movie:hover {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+Movie[genre="horror"] {
+  background-color: rgba(255, 0, 0, 0.6);
+}
+
+Movie[genre="horror"]:hover {
+  background-color: rgba(255, 0, 0, 0.8);
+}
+
+Movie Rating::before {
+  content: url("./content/icons/star.svg");
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+}
+
+Movie Rating {
+  display: flex;
+  line-height: 120%;
+  vertical-align: middle;
+}
+
+Movie Mtitle {
+  display: flex;
+  align-self: center;
+  font-weight: bold;
+  font-size: 20px;
+  padding-bottom: 18px;
+  text-align: center;
+  line-height: 120%;
+}
+
+Movie Description {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+Movie Description::before {
+  content: "Description: ";
+}
+
+Movie Budget::before {
+  content: "Budget: ";
+}
+
+Movie Budget::after {
+  content: " $";
+}
+
+Movie ReleaseDate::before {
+  content: "Premiere: ";
+}

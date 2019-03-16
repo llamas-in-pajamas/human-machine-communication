@@ -5,18 +5,22 @@
  <AuthorRepository author_repository_id="i1" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/">
   <Authors>
    <Author author_id="i2">
+    <Portrait />
     <FirstName>Chester</FirstName>
     <LastName>O'Keefe</LastName>
    </Author>
    <Author author_id="i3">
+   <Portrait />
     <FirstName>Greg</FirstName>
     <LastName>Quitzon</LastName>
    </Author>
    <Author author_id="i4">
+   <Portrait />
     <FirstName>Nova</FirstName>
     <LastName>Hamill</LastName>
    </Author>
    <Author author_id="i5">
+   <Portrait />
     <FirstName>Nettie</FirstName>
     <LastName>Kuhn</LastName>
    </Author>
@@ -30,7 +34,7 @@
     <Description>Et ut reprehenderit officia dicta a totam. Temporibus omnis dolorem expedita. Illo ut sequi maiores similique.</Description>
     <Rating>2.46</Rating>
     <ReleaseDate>1998-10-23T00:00:00</ReleaseDate>
-    <Title>Voluptatum et nemo et et ut odio.</Title>
+    <Mtitle>Voluptatum et nemo et et ut odio.</Mtitle>
    </Movie>
    <Movie genre="adventure">
     <Author ref="i5" />
@@ -38,7 +42,7 @@
     <Description>Totam sit vero voluptatem eius molestiae ut optio quia. Incidunt in in vitae minus ex repellat quasi expedita. Neque assumenda molestiae voluptatem et quia animi sint est. Est et repellat ipsa.</Description>
     <Rating>1.41</Rating>
     <ReleaseDate>1997-11-20T00:00:00</ReleaseDate>
-    <Title>Possimus delectus quas aut et.</Title>
+    <Mtitle>Possimus delectus quas aut et.</Mtitle>
    </Movie>
    <Movie genre="horror">
     <Author ref="i2" />
@@ -46,7 +50,7 @@
     <Description>Nihil ad eveniet et modi cumque voluptatem ut consequatur. Est eum cumque sunt. Et explicabo eum ab molestiae quasi non. Culpa sed omnis aut iure dolores sapiente accusantium recusandae.</Description>
     <Rating>7.33</Rating>
     <ReleaseDate>1998-12-16T00:00:00</ReleaseDate>
-    <Title>Et eius quae facere velit autem eius excepturi.</Title>
+    <Mtitle>Et eius quae facere velit autem eius excepturi.</Mtitle>
    </Movie>
    <Movie genre="action">
     <Author ref="i4" />
@@ -54,7 +58,7 @@
     <Description>Iure non dolorum libero nihil. Sit quibusdam aut provident. Quos veniam voluptatem iure praesentium est officiis quae.</Description>
     <Rating>3.9</Rating>
     <ReleaseDate>2006-01-30T00:00:00</ReleaseDate>
-    <Title>Aperiam cum quia quibusdam accusamus dolores.</Title>
+    <Mtitle>Aperiam cum quia quibusdam accusamus dolores.</Mtitle>
    </Movie>
    <Movie genre="horror">
     <Author ref="i4" />
@@ -62,7 +66,7 @@
     <Description>Fugiat esse natus non consequatur consectetur. Qui nemo delectus corrupti earum. Ab quia fugit qui omnis. Vel sint quos quidem totam officiis. Quo sunt dolorem quibusdam.</Description>
     <Rating>7.88</Rating>
     <ReleaseDate>2017-12-09T00:00:00</ReleaseDate>
-    <Title>Quaerat quia ut ab sed incidunt error voluptatum magni.</Title>
+    <Mtitle>Quaerat quia ut ab sed incidunt error voluptatum magni.</Mtitle>
    </Movie>
    <Movie genre="action">
     <Author ref="i4" />
@@ -70,7 +74,7 @@
     <Description>Voluptates iste laudantium aut fuga rerum. Qui id enim vitae sed laboriosam omnis explicabo. Distinctio voluptatum incidunt voluptatem.</Description>
     <Rating>8.81</Rating>
     <ReleaseDate>2008-01-18T00:00:00</ReleaseDate>
-    <Title>Aperiam tempora qui aut alias inventore rerum.</Title>
+    <Mtitle>Aperiam tempora qui aut alias inventore rerum.</Mtitle>
    </Movie>
    <Movie genre="adventure">
     <Author ref="i4" />
@@ -78,7 +82,7 @@
     <Description>Placeat animi quasi qui voluptates. Nisi dicta qui ratione et consectetur. Ipsa vel impedit laboriosam dolores molestias illum et eum.</Description>
     <Rating>6.06</Rating>
     <ReleaseDate>2002-08-12T00:00:00</ReleaseDate>
-    <Title>Voluptates officiis voluptas facilis et fuga necessitatibus autem reiciendis.</Title>
+    <Mtitle>Voluptates officiis voluptas facilis et fuga necessitatibus autem reiciendis.</Mtitle>
    </Movie>
    <Movie genre="action">
     <Author ref="i5" />
@@ -86,7 +90,7 @@
     <Description>Recusandae ut quae sit facilis. Reprehenderit sunt quia vero voluptas. Omnis et nostrum porro placeat.</Description>
     <Rating>4.92</Rating>
     <ReleaseDate>2006-02-04T00:00:00</ReleaseDate>
-    <Title>Totam expedita sint animi neque vero culpa.</Title>
+    <Mtitle>Totam expedita sint animi neque vero culpa.</Mtitle>
    </Movie>
    <Movie genre="adventure">
     <Author ref="i5" />
@@ -94,7 +98,7 @@
     <Description>Aliquam aliquid tempore quod rerum impedit. Dignissimos nostrum hic et quas voluptatem quod dolorem illo. Illo et at suscipit. Ipsa quia maiores ut esse.</Description>
     <Rating>5.55</Rating>
     <ReleaseDate>2001-09-15T00:00:00</ReleaseDate>
-    <Title>Odit consectetur id debitis saepe non.</Title>
+    <Mtitle>Odit consectetur id debitis saepe non.</Mtitle>
    </Movie>
    <Movie genre="horror">
     <Author ref="i3" />
@@ -102,7 +106,7 @@
     <Description>Aut voluptas quasi consectetur nulla. Quibusdam autem sapiente qui quia est. Eum non ut error. Dicta enim aliquid possimus. Exercitationem perspiciatis laboriosam aut ut maiores est.</Description>
     <Rating>5.94</Rating>
     <ReleaseDate>2003-11-19T00:00:00</ReleaseDate>
-    <Title>Voluptates consequatur accusamus molestiae est.</Title>
+    <Mtitle>Voluptates consequatur accusamus molestiae est.</Mtitle>
    </Movie>
    <Movie genre="horror">
     <Author ref="i2" />
@@ -110,7 +114,7 @@
     <Description>Maxime et non voluptatem tenetur labore. Repellat ea architecto aut voluptas et maxime. Fugiat ut qui omnis est molestias quia. Aut aliquid veritatis ut assumenda labore.</Description>
     <Rating>5.4</Rating>
     <ReleaseDate>2000-10-03T00:00:00</ReleaseDate>
-    <Title>Aut aut ut quidem nisi et qui id facilis.</Title>
+    <Mtitle>Aut aut ut quidem nisi et qui id facilis.</Mtitle>
    </Movie>
    <Movie genre="horror">
     <Author ref="i5" />
@@ -118,7 +122,7 @@
     <Description>Maxime enim perferendis veniam provident neque. Eaque culpa asperiores sit sit reiciendis. Autem est libero saepe aut temporibus. Blanditiis enim et molestiae neque ea dignissimos aut. Dicta quisquam nam ipsum culpa dolor temporibus.</Description>
     <Rating>3.18</Rating>
     <ReleaseDate>2017-03-17T00:00:00</ReleaseDate>
-    <Title>Non aut minima sed.</Title>
+    <Mtitle>Non aut minima sed.</Mtitle>
    </Movie>
    <Movie genre="horror">
     <Author ref="i4" />
@@ -127,7 +131,7 @@
     <Genre>Horror</Genre>
     <Rating>8.88</Rating>
     <ReleaseDate>2013-11-25T00:00:00</ReleaseDate>
-    <Title>Laudantium est perspiciatis quas.</Title>
+    <Mtitle>Laudantium est perspiciatis quas.</Mtitle>
    </Movie>
    <Movie genre="drama">
     <Author ref="i2" />
@@ -135,7 +139,7 @@
     <Description>Perspiciatis suscipit quidem rem officia nostrum dolor rerum numquam. Laboriosam incidunt quia aliquid. Temporibus non pariatur vitae distinctio dolorem totam eum numquam.</Description>
     <Rating>5.21</Rating>
     <ReleaseDate>2012-03-18T00:00:00</ReleaseDate>
-    <Title>Voluptatem voluptatem sed autem enim eos veniam officiis.</Title>
+    <Mtitle>Voluptatem voluptatem sed autem enim eos veniam officiis.</Mtitle>
    </Movie>
    <Movie genre="drama">
     <Author ref="i3" />
@@ -143,7 +147,7 @@
     <Description>Nam aut modi omnis iusto exercitationem eum. Provident veniam eum repellendus error. Sit expedita in excepturi maxime architecto hic nihil autem. Qui facilis voluptatem et corporis illo ex.</Description>
     <Rating>3.45</Rating>
     <ReleaseDate>2018-11-24T00:00:00</ReleaseDate>
-    <Title>Et quia consequuntur facilis.</Title>
+    <Mtitle>Et quia consequuntur facilis.</Mtitle>
    </Movie>
    <Movie genre="drama">
     <Author ref="i4" />
@@ -151,7 +155,7 @@
     <Description>Officiis dicta sit nobis qui. Commodi ut qui exercitationem sed rerum commodi. Ex et et sunt distinctio voluptate. Doloremque deleniti eveniet voluptatum molestiae voluptas et et.</Description>
     <Rating>5.55</Rating>
     <ReleaseDate>2010-12-06T00:00:00</ReleaseDate>
-    <Title>Quis doloremque et quis officiis maiores voluptas id qui.</Title>
+    <Mtitle>Quis doloremque et quis officiis maiores voluptas id qui.</Mtitle>
    </Movie>
    <Movie genre="adventure">
     <Author ref="i4" />
@@ -159,7 +163,7 @@
     <Description>Accusamus laborum aspernatur ipsum asperiores est similique optio. Iste ut quia iusto voluptas est quis quia totam. Et qui ut et quia. Beatae dolores consequatur eos. Eligendi id harum sed neque et et.</Description>
     <Rating>1.84</Rating>
     <ReleaseDate>2003-06-20T00:00:00</ReleaseDate>
-    <Title>Recusandae quidem exercitationem unde ut.</Title>
+    <Mtitle>Recusandae quidem exercitationem unde ut.</Mtitle>
    </Movie>
    <Movie genre="action">
     <Author ref="i5" />
@@ -167,7 +171,7 @@
     <Description>At aperiam vel deleniti provident non est ad. Sit est molestiae voluptatem sint adipisci sed fugiat vel. Ut corrupti ipsam cum quod atque ut provident soluta.</Description>
     <Rating>0.25</Rating>
     <ReleaseDate>2015-06-15T00:00:00</ReleaseDate>
-    <Title>Sit similique aut aut ad.</Title>
+    <Mtitle>Sit similique aut aut ad.</Mtitle>
    </Movie>
    <Movie genre="adventure">
     <Author ref="i3" />
@@ -175,7 +179,7 @@
     <Description>Eum ut voluptas consequuntur ex dolor fugiat dolor officiis. Sit odio sunt quo. Hic eum aliquam ut ex rerum asperiores. Qui non quasi omnis omnis in vel.</Description>
     <Rating>8.23</Rating>
     <ReleaseDate>2017-02-12T00:00:00</ReleaseDate>
-    <Title>Eligendi minus numquam qui velit aut odit magni eos.</Title>
+    <Mtitle>Eligendi minus numquam qui velit aut odit magni eos.</Mtitle>
    </Movie>
    <Movie genre="drama">
     <Author ref="i5" />
@@ -183,7 +187,7 @@
     <Description>Quod sint labore fugit totam reiciendis neque. Sit nobis odit ut iure. Quis adipisci quis esse quasi animi. Veniam voluptas nihil officiis.</Description>
     <Rating>2.94</Rating>
     <ReleaseDate>2017-08-21T00:00:00</ReleaseDate>
-    <Title>Dolor nulla quisquam consequuntur ea.</Title>
+    <Mtitle>Dolor nulla quisquam consequuntur ea.</Mtitle>
    </Movie>
    <Movie genre="comedy">
     <Author ref="i5" />
@@ -191,7 +195,7 @@
     <Description>Necessitatibus aut est tenetur nostrum repellendus. Provident vero consequatur et accusamus veritatis. Minus voluptates voluptas quisquam.</Description>
     <Rating>8.53</Rating>
     <ReleaseDate>2010-03-15T00:00:00</ReleaseDate>
-    <Title>Sapiente omnis praesentium amet sed labore quia quibusdam.</Title>
+    <Mtitle>Sapiente omnis praesentium amet sed labore quia quibusdam.</Mtitle>
    </Movie>
    <Movie genre="comedy">
     <Author ref="i4" />
@@ -199,7 +203,7 @@
     <Description>Veniam deserunt enim consequatur qui corrupti molestias suscipit quia. Amet non nihil voluptatem architecto. Velit aut fugit consequatur. Soluta quod sed eum molestiae.</Description>
     <Rating>2.37</Rating>
     <ReleaseDate>2010-09-05T00:00:00</ReleaseDate>
-    <Title>Sequi quo dicta doloribus aut ut delectus quisquam.</Title>
+    <Mtitle>Sequi quo dicta doloribus aut ut delectus quisquam.</Mtitle>
    </Movie>
    <Movie genre="action">
     <Author ref="i5" />
@@ -207,7 +211,7 @@
     <Description>Dolorum et ea molestias. Corrupti omnis voluptatem aperiam et praesentium ut. Est velit facere laborum. At sequi quia voluptatem quibusdam aliquid dolorum.</Description>
     <Rating>2.69</Rating>
     <ReleaseDate>2017-11-16T00:00:00</ReleaseDate>
-    <Title>Exercitationem vitae natus praesentium.</Title>
+    <Mtitle>Exercitationem vitae natus praesentium.</Mtitle>
    </Movie>
    <Movie genre="adventure">
     <Author ref="i2" />
@@ -215,7 +219,7 @@
     <Description>Qui quos officiis ea est vitae. Nisi consequatur qui dolorem eligendi. Beatae corporis ut numquam aliquid sed.</Description>
     <Rating>3.6</Rating>
     <ReleaseDate>2017-01-20T00:00:00</ReleaseDate>
-    <Title>Dignissimos aut animi dignissimos illo.</Title>
+    <Mtitle>Dignissimos aut animi dignissimos illo.</Mtitle>
    </Movie>
    <Movie genre="drama">
     <Author ref="i4" />
@@ -223,7 +227,7 @@
     <Description>Eligendi praesentium sunt ut quam. Et adipisci voluptas ut quo occaecati animi vel. Fuga ut expedita qui sapiente asperiores. Ut aut voluptatum eos sapiente.</Description>
     <Rating>2.74</Rating>
     <ReleaseDate>2015-12-19T00:00:00</ReleaseDate>
-    <Title>Necessitatibus molestiae aliquid rerum cupiditate.</Title>
+    <Mtitle>Necessitatibus molestiae aliquid rerum cupiditate.</Mtitle>
    </Movie>
   </Movies>
  </MovieRepository>

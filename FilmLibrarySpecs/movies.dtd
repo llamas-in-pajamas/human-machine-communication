@@ -11,7 +11,7 @@
 >
 
 <!ELEMENT Authors (Author*)>
-<!ELEMENT Author (FirstName*, LastName*)>
+<!ELEMENT Author (FirstName*, LastName*, Portrait*)>
 <!ATTLIST Author
     author_id ID #IMPLIED
     ref IDREF #IMPLIED
@@ -27,7 +27,7 @@
 >
 
 <!ELEMENT Movies (Movie*)>
-<!ELEMENT Movie (Author, Budget, Description, Rating, ReleaseDate, Title)>
+<!ELEMENT Movie (Author, Budget, Description, Rating, ReleaseDate, Mtitle)>
 
 <!ATTLIST Movie genre (drama|horror|action|adventure) #REQUIRED>
 
@@ -35,4 +35,4 @@
 <!ELEMENT Description (#PCDATA)>
 <!ELEMENT Rating (#PCDATA)>
 <!ELEMENT ReleaseDate (#PCDATA)>
-<!ELEMENT Title (#PCDATA)>
+<!ELEMENT Mtitle (#PCDATA)>
