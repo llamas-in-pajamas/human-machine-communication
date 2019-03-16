@@ -6,15 +6,15 @@
 
 <!ELEMENT AuthorRepository (Authors)>
 <!ATTLIST AuthorRepository
-    z:Id ID #REQUIRED
+    author_repository_id ID #REQUIRED
     xmlns:z CDATA #IMPLIED
 >
 
 <!ELEMENT Authors (Author*)>
 <!ELEMENT Author (FirstName*, LastName*)>
 <!ATTLIST Author
-    z:Id ID #IMPLIED
-    z:Ref NMTOKEN #IMPLIED
+    author_id ID #IMPLIED
+    ref IDREF #IMPLIED
 >
 
 <!ELEMENT FirstName (#PCDATA)>
@@ -22,7 +22,7 @@
 
 <!ELEMENT MovieRepository (Movies)>
 <!ATTLIST MovieRepository
-    z:Id ID #REQUIRED
+    movie_respository_id ID #REQUIRED
     xmlns:z CDATA #IMPLIED
 >
 
