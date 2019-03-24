@@ -8,10 +8,11 @@
   <xs:element name="Rating" type="xs:decimal" />
   <xs:element name="ReleaseDate" type="xs:dateTime" />
   <xs:element name="Mtitle" type="xs:string" />
+  <xs:element name="Description" type="xs:string" />
 
   <!-- Attributes -->
   <xs:attribute name="genre" type="xs:string" />
-  <xs:attribute name="ref", type="xs:string" />
+  <xs:attribute name="ref" type="xs:string" />
   <xs:attribute name="author_id" type="xs:string" />
   <xs:attribute name="author_repository_id" type="xs:string" />
   <xs:attribute name="movie_repository_id" type="xs:string" />
@@ -41,36 +42,46 @@
     </xs:complexType>
   </xs:element>
 
-  <xs:elemnent name="Authors">
+  <xs:element name="Authors">
     <xs:complexType>
-      <xs:element ref="Author" minOccurs="0" maxOccurs="unbounded" />
+      <xs:sequence>
+        <xs:element ref="Author" minOccurs="0" maxOccurs="unbounded" />
+      </xs:sequence>
     </xs:complexType>
   </xs:element>
 
   <xs:element name="Movies">
     <xs:complexType>
-      <xs:element ref="Movie" minOccurs="0" maxOccurs="unbounded" />
+      <xs:sequence>
+        <xs:element ref="Movie" minOccurs="0" maxOccurs="unbounded" />
+      </xs:sequence>
     </xs:complexType>
   </xs:element>
 
   <xs:element name="AuthorRepository">
     <xs:complexType>
-      <xs:element ref="Authors" />
+      <xs:sequence>
+        <xs:element ref="Authors" />
+      </xs:sequence>
       <xs:attribute ref="author_repository_id" />
     </xs:complexType>
   </xs:element>
 
   <xs:element name="MovieRepository">
     <xs:complexType>
-      <xs:element ref="Movies" />
+      <xs:sequence>
+        <xs:element ref="Movies" />
+      </xs:sequence>
       <xs:attribute ref="movie_repository_id" />
     </xs:complexType>
   </xs:element>
 
   <xs:element name="Catalogue">
     <xs:complexType>
-      <xs:element ref="AuthorRepository" />
-      <xs:element ref="MovieRepository" />
+      <xs:sequence>
+        <xs:element ref="AuthorRepository" />
+        <xs:element ref="MovieRepository" />
+      </xs:sequence>
     </xs:complexType>
   </xs:element>
 
