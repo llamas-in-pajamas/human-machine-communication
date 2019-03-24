@@ -1,0 +1,77 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <!-- Simple Types -->
+  <xs:element name="FirstName" type="xs:string" />
+  <xs:element name="LastName" type="xs:string" />
+  <xs:element name="Budget" type="xs:positiveInteger" />
+  <xs:element name="Rating" type="xs:decimal" />
+  <xs:element name="ReleaseDate" type="xs:dateTime" />
+  <xs:element name="Mtitle" type="xs:string" />
+
+  <!-- Attributes -->
+  <xs:attribute name="genre" type="xs:string" />
+  <xs:attribute name="ref", type="xs:string" />
+  <xs:attribute name="author_id" type="xs:string" />
+  <xs:attribute name="author_repository_id" type="xs:string" />
+  <xs:attribute name="movie_repository_id" type="xs:string" />
+
+  <!-- Complex Types -->
+  <xs:element name="Author">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Portrait" />
+        <xs:element ref="FirstName" />
+        <xs:element ref="LastName" />
+      </xs:sequence>
+      <xs:attribute ref="author_id" />
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="Movie">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Author" />
+        <xs:element ref="Budget" />
+        <xs:element ref="Description" />
+        <xs:element ref="Rating" />
+        <xs:element ref="ReleaseDate" />
+        <xs:element ref="Mtitle" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:elemnent name="Authors">
+    <xs:complexType>
+      <xs:element ref="Author" minOccurs="0" maxOccurs="unbounded" />
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="Movies">
+    <xs:complexType>
+      <xs:element ref="Movie" minOccurs="0" maxOccurs="unbounded" />
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="AuthorRepository">
+    <xs:complexType>
+      <xs:element ref="Authors" />
+      <xs:attribute ref="author_repository_id" />
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="MovieRepository">
+    <xs:complexType>
+      <xs:element ref="Movies" />
+      <xs:attribute ref="movie_repository_id" />
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="Catalogue">
+    <xs:complexType>
+      <xs:element ref="AuthorRepository" />
+      <xs:element ref="MovieRepository" />
+    </xs:complexType>
+  </xs:element>
+
+</xs:schema>
