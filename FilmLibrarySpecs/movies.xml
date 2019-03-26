@@ -1,7 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE Catalogue SYSTEM "movies.dtd">
 <?xml-stylesheet type="text/css" href="movies.css"?>
-<Catalogue xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/FilmLibrary">
+
+<Catalogue xmlns="https://www.w3schools.com"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="https://www.w3schools.com movies.xsd">
  <AuthorRepository author_repository_id="i1" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/">
   <Authors>
    <Author author_id="i2">
@@ -26,7 +29,7 @@
    </Author>
   </Authors>
  </AuthorRepository>
- <MovieRepository movie_respository_id="i6" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/">
+ <MovieRepository movie_repository_id="i6" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/">
   <Movies>
    <Movie genre="horror">
     <Author ref="i2" />
@@ -128,7 +131,6 @@
     <Author ref="i4" />
     <Budget>689708983</Budget>
     <Description>Aut distinctio et ad. Et placeat vitae consectetur. Quis repellat voluptatem vero consequatur omnis quae. Ut voluptates ullam ex. Voluptas laborum recusandae mollitia commodi accusamus excepturi iste.</Description>
-    <Genre>Horror</Genre>
     <Rating>8.88</Rating>
     <ReleaseDate>2013-11-25T00:00:00</ReleaseDate>
     <Mtitle>Laudantium est perspiciatis quas.</Mtitle>
