@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- <?xml-stylesheet type="text/xsl" href="movies_to_pdf.xsl"?>
+<?xml-stylesheet type="text/xsl" href="movies_to_xml.xsl"?>
 <?xml-stylesheet type="text/xsl" href="movies_to_html.xsl"?>
+<?xml-stylesheet type="text/xsl" href="movies_to_txt.xsl"?> -->
+
 
 <Helper>
   <Statistics>
