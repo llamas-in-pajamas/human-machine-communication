@@ -3,8 +3,7 @@
 <?xml-stylesheet type="text/xsl" href="movies_to_xml.xsl"?>
 <?xml-stylesheet type="text/xsl" href="movies_to_html.xsl"?>
 <?xml-stylesheet type="text/xsl" href="movies_to_txt.xsl"?> -->
-
-
+<?xml-stylesheet type="text/xsl" href="movies_to_svg.xsl"?>
 <Helper>
   <Statistics>
     <NumberOfAuthors>4</NumberOfAuthors>
