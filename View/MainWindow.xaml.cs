@@ -48,12 +48,6 @@ namespace View
         }
     }
 
-    public class Person
-    {
-        public string Address { get; set; }
-        public string Name { get; set; }
-    }
-
     public class Author
     {
         public string FirstName { get; set; }
