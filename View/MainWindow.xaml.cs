@@ -53,4 +53,24 @@ namespace View
         public string FirstName { get; set; }
         public string LastName { get; set; }
     }
+
+    public enum Genre
+    {
+        Comedy,
+        Action,
+        Adventure,
+        Drama,
+        Horror
+    }
+
+    public class Movie
+    {
+        public Author Author { get; set; }
+        public DateTime ReleaseDate { get; set; }
+        public String Title { get; set; }
+        public String Description { get; set; }
+        public int Budget { get; set; }
+        public double Rating { get; set; }
+        public Genre Genre { get; set; }
+    }
 }

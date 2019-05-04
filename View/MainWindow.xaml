@@ -22,34 +22,44 @@
             <!-- LastName TextBox -->
             <TextBlock x:Name="labelLastName" Text="Last Name"/>
             <TextBox x:Name="textLastName"/>
+
+            <Grid Grid.Column="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <!-- Add new Author Button-->
+                <Button 
+                    Grid.Column="0"
+                    Width="100"
+                    Height="20"
+                    Margin="5,5,5,5"
+                    x:Name="addAuthor"
+                    Click="AddAuthor_Click"
+                    Content="Add"
+                />
+
+                <!-- Remove Author Button -->
+                <Button 
+                    Grid.Column="1"
+                    Width="100"
+                    Height="20"
+                    Margin="5,5,5,5"
+                    x:Name="removeAuthor"
+                    Click="RemoveAuthor_Click"
+                    Content="Remove"
+                />
+            </Grid>
             
-            <!-- Add new Author Button-->
-            <Button 
-                Grid.Column="0"
-                Width="100"
-                Height="20"
-                Margin="5,5,5,5"
-                x:Name="addAuthor"
-                Click="AddAuthor_Click"
-                Content="Add"
-             />
             
-            <!-- Remove Author Button -->
-            <Button 
-                Grid.Column="0"
-                Width="100"
-                Height="20"
-                Margin="5,5,5,5"
-                x:Name="removeAuthor"
-                Click="RemoveAuthor_Click"
-                Content="Remove"
-             />
+            
         </StackPanel>
         <ListView x:Name="listOfAuthors" Margin="5,5,5,5" Grid.Column="1" Grid.Row="0">
             <ListView.View>
                 <GridView x:Name="gridAuthor">
-                    <GridViewColumn Header="Name" DisplayMemberBinding="{Binding FirstName}"/>
-                    <GridViewColumn Header="Address" DisplayMemberBinding="{Binding LastName}"/>
+                    <GridViewColumn Header="FirstName" DisplayMemberBinding="{Binding FirstName}"/>
+                    <GridViewColumn Header="LastName" DisplayMemberBinding="{Binding LastName}"/>
                 </GridView>
             </ListView.View>
         </ListView>
