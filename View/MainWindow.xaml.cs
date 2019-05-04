@@ -18,28 +18,33 @@ namespace View
 {
     public partial class MainWindow : Window
     {
-        private ObservableCollection<Person> People;
+        private ObservableCollection<Author> Authors;
         public MainWindow()
         {
             InitializeComponent();
-            People = new ObservableCollection<Person>()
+            Authors = new ObservableCollection<Author>()
             {
-                new Person() { Name = "Adam", Address = "Test Address 1" },
-                new Person() { Name = "Karol", Address = "Test Address 2" }
+                new Author() { FirstName = "Adam", LastName = "Prezes" },
+                new Author() { FirstName = "Karol", LastName = "Wielki" }
 
             };
-            listOfNames.ItemsSource = People;
+            listOfAuthors.ItemsSource = Authors;
         }
 
-        private void ButtonNames_Click(object sender, RoutedEventArgs e)
+        private void AddAuthor_Click(object sender, RoutedEventArgs e)
         {
-            People.Add(new Person()
+            Authors.Add(new Author()
             {
-                Name = textName.Text,
-                Address = textAddress.Text
+                FirstName = textFirstName.Text,
+                LastName = textLastName.Text
             });
-            textName.Text = String.Empty;
-            textAddress.Text = String.Empty;
+            textFirstName.Text = String.Empty;
+            textLastName.Text = String.Empty;
+        }
+
+        private void RemoveAuthor_Click(object sender, RoutedEventArgs e)
+        {
+            Authors.Remove((Author)listOfAuthors.SelectedItem);
         }
     }
 
@@ -47,5 +52,11 @@ namespace View
     {
         public string Address { get; set; }
         public string Name { get; set; }
+    }
+
+    public class Author
+    {
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
     }
 }
