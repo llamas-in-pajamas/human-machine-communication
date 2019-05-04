@@ -13,7 +13,10 @@
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="*"/>
+            <RowDefinition Height="2*"/>
         </Grid.RowDefinitions>
+        
+        <!-- Author Management -->
         <StackPanel Grid.Row="0" Grid.Column="0" Margin="5,5,5,5">
             <!-- FirstName TextBox-->
             <TextBlock x:Name="labelFirstName" Text="First Name"/>
@@ -23,6 +26,7 @@
             <TextBlock x:Name="labelLastName" Text="Last Name"/>
             <TextBox x:Name="textLastName"/>
 
+            <!-- Rest Interface -->
             <Grid Grid.Column="0">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*"/>
@@ -51,9 +55,51 @@
                     Content="Remove"
                 />
             </Grid>
+        </StackPanel>
+        <!-- Movie Management -->
+        <StackPanel Grid.Row="1" Grid.Column="0" Margin="5,5,5,5">
+            <!-- Title TextBox -->
+            <TextBlock x:Name="labelTitle" Text="Title"/>
+            <TextBox x:Name="textTitle"/>
             
+            <!-- Description TextBox -->
+            <TextBlock x:Name="labelDescription" Text="Description"/>
+            <TextBox x:Name="textDescription"/>
             
+            <!-- Budget NumericTextBox -->
+            <TextBlock x:Name="labelBudget" Text="Budget"/>
+            <TextBox x:Name="numericBudget"/>
+            <!-- Rating TextBox -->
             
+            <!-- Rest interface -->
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                
+                <!-- Add Movie Button-->
+                <Button 
+                    Grid.Column="0"
+                    Width="100"
+                    Height="20"
+                    Margin="5,5,5,5"
+                    x:Name="addMovie"
+                    Click="AddMovie_Click"
+                    Content="Add"
+                />
+
+                <!-- Remove Movie Button -->
+                <Button 
+                    Grid.Column="1"
+                    Width="100"
+                    Height="20"
+                    Margin="5,5,5,5"
+                    x:Name="removeMovie"
+                    Click="RemoveMovie_Click"
+                    Content="Remove"
+                />
+            </Grid>
         </StackPanel>
         <ListView x:Name="listOfAuthors" Margin="5,5,5,5" Grid.Column="1" Grid.Row="0">
             <ListView.View>

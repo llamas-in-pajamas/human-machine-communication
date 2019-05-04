@@ -46,6 +46,16 @@ namespace View
         {
             Authors.Remove((Author)listOfAuthors.SelectedItem);
         }
+
+        private void AddMovie_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void RemoveMovie_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 
     public class Author
