@@ -13,74 +13,74 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using View.ViewModel;
 
 namespace View
 {
     public partial class MainWindow : Window
     {
-        private ObservableCollection<Author> Authors;
         public MainWindow()
         {
             InitializeComponent();
-            Authors = new ObservableCollection<Author>()
-            {
-                new Author() { FirstName = "Adam", LastName = "Prezes" },
-                new Author() { FirstName = "Karol", LastName = "Wielki" }
-
-            };
-            listOfAuthors.ItemsSource = Authors;
         }
 
-        private void AddAuthor_Click(object sender, RoutedEventArgs e)
-        {
-            Authors.Add(new Author()
-            {
-                FirstName = textFirstName.Text,
-                LastName = textLastName.Text
-            });
-            textFirstName.Text = String.Empty;
-            textLastName.Text = String.Empty;
-        }
+        //private void AddAuthor_Click(object sender, RoutedEventArgs e)
+        //{
+        //    Authors.Add(new Author()
+        //    {
+        //        FirstName = textFirstName.Text,
+        //        LastName = textLastName.Text
+        //    });
+        //    textFirstName.Text = String.Empty;
+        //    textLastName.Text = String.Empty;
+        //}
 
-        private void RemoveAuthor_Click(object sender, RoutedEventArgs e)
-        {
-            Authors.Remove((Author)listOfAuthors.SelectedItem);
-        }
+        //private void RemoveAuthor_Click(object sender, RoutedEventArgs e)
+        //{
+        //    Authors.Remove((Author)listOfAuthors.SelectedItem);
+        //}
 
-        private void AddMovie_Click(object sender, RoutedEventArgs e)
-        {
+        //private void AddMovie_Click(object sender, RoutedEventArgs e)
+        //{
+        //    Movies.Add(new Movie()
+        //    {
 
-        }
+        //    });
+        //}
 
-        private void RemoveMovie_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
+        //private void RemoveMovie_Click(object sender, RoutedEventArgs e)
+        //{
+        //    Movies.Remove((Movie) listOfMovies.SelectedItem);
+        //}
     }
 
-    public class Author
-    {
-        public string FirstName { get; set; }
-        public string LastName { get; set; }
-    }
+    //public class Author
+    //{
+    //    public string FirstName { get; set; }
+    //    public string LastName { get; set; }
+    //    public override string ToString()
+    //    {
+    //        return FirstName + ' ' + LastName;
+    //    }
+    //}
 
-    public enum Genre
-    {
-        Comedy,
-        Action,
-        Adventure,
-        Drama,
-        Horror
-    }
+    //public enum Genre
+    //{
+    //    Comedy,
+    //    Action,
+    //    Adventure,
+    //    Drama,
+    //    Horror
+    //}
 
-    public class Movie
-    {
-        public Author Author { get; set; }
-        public DateTime ReleaseDate { get; set; }
-        public String Title { get; set; }
-        public String Description { get; set; }
-        public int Budget { get; set; }
-        public double Rating { get; set; }
-        public Genre Genre { get; set; }
-    }
+    //public class Movie
+    //{
+    //    public Author Author { get; set; }
+    //    public DateTime ReleaseDate { get; set; }
+    //    public String Title { get; set; }
+    //    public String Description { get; set; }
+    //    public int Budget { get; set; }
+    //    public double Rating { get; set; }
+    //    public Genre Genre { get; set; }
+    //}
 }

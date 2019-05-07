@@ -10,5 +10,10 @@ namespace FilmLibrary
         public String FirstName { get; set; }
         [DataMember]
         public String LastName { get; set; }
+
+        public override string ToString()
+        {
+            return FirstName + ' ' + LastName;
+        }
     }
 }
