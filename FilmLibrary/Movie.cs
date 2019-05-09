@@ -13,7 +13,7 @@ namespace FilmLibrary
         Horror
     }
 
-    [DataContract]
+    [DataContract(Name = "Movie")]
     public class Movie
     {
         [DataMember]

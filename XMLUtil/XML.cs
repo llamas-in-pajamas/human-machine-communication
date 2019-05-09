@@ -9,6 +9,14 @@ namespace XMLUtil
 {
     public static class XML
     {
+        public static T XmlDeserialize<T>(string path)
+        {
+            DataContractSerializer serializer = new DataContractSerializer(typeof(T));
+            using (FileStream fileStream = new FileStream(path, FileMode.Open))
+            {
+                return (T)serializer.ReadObject(fileStream);
+            }
+        }
 
         public static void Serialize<T>(T source, string path, FileMode mode, string stylesheetName)
         {
@@ -23,7 +31,6 @@ namespace XMLUtil
             using (FileStream stream = new FileStream(path, mode, FileAccess.Write))
             using (XmlWriter writer = XmlWriter.Create(stream, settings))
             {
-                writer.WriteProcessingInstruction("xml-stylesheet", "type=\"text/xs1\" " + String.Format("href=\"{0}\"", stylesheetName));
                 serializer.WriteObject(writer, source);
             }
         }

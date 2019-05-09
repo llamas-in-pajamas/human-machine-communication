@@ -55,6 +55,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="ViewModel\BaseViewModel.cs" />
+    <Compile Include="ViewModel\RelayCommand.cs" />
+    <Compile Include="ViewModel\ViewModel.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -99,9 +102,9 @@
       <Project>{14d59944-4817-419f-b359-f976cea021a9}</Project>
       <Name>FilmLibrary</Name>
     </ProjectReference>
-    <ProjectReference Include="..\ViewModel\ViewModel.csproj">
-      <Project>{af35b5ee-b75d-4b2c-bdf8-c53aadd893be}</Project>
-      <Name>ViewModel</Name>
+    <ProjectReference Include="..\XMLUtil\XMLUtil.csproj">
+      <Project>{e2c051d5-2087-492b-9c21-7756f3346568}</Project>
+      <Name>XMLUtil</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

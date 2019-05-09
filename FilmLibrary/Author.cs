@@ -3,7 +3,7 @@ using System.Runtime.Serialization;
 
 namespace FilmLibrary
 {
-    [DataContract(IsReference = true)]
+    [DataContract(Name="Author", IsReference = true)]
     public class Author
     {
         [DataMember]
