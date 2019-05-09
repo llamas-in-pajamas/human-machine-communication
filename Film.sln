@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FilmLibrarySpecs", "FilmLib
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "View", "View\View.csproj", "{DFDD0062-F63E-4DAA-809E-951C160B2F81}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ViewModel", "ViewModel\ViewModel.csproj", "{AF35B5EE-B75D-4B2C-BDF8-C53AADD893BE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{DFDD0062-F63E-4DAA-809E-951C160B2F81}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DFDD0062-F63E-4DAA-809E-951C160B2F81}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DFDD0062-F63E-4DAA-809E-951C160B2F81}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF35B5EE-B75D-4B2C-BDF8-C53AADD893BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF35B5EE-B75D-4B2C-BDF8-C53AADD893BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF35B5EE-B75D-4B2C-BDF8-C53AADD893BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF35B5EE-B75D-4B2C-BDF8-C53AADD893BE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

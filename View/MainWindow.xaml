@@ -3,12 +3,12 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:viewModel="clr-namespace:View.ViewModel"
         xmlns:local="clr-namespace:View"
+        xmlns:viewModel1="clr-namespace:ViewModel;assembly=ViewModel"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Window.DataContext>
-        <viewModel:ViewModel />
+        <viewModel1:ViewModel />
     </Window.DataContext>
     <Grid>
         <Grid.ColumnDefinitions>
@@ -24,11 +24,11 @@
         <StackPanel Grid.Row="0" Grid.Column="0" Margin="5,5,5,5">
             <!-- FirstName TextBox-->
             <TextBlock x:Name="labelFirstName" Text="First Name"/>
-            <TextBox Text="{Binding FirstNameTextBox, Mode=TwoWay}"/>
+            <TextBox Text="{Binding FirstNameTextBox, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
             
             <!-- LastName TextBox -->
             <TextBlock x:Name="labelLastName" Text="Last Name"/>
-            <TextBox Text="{Binding LastNameTextBox, Mode=TwoWay}"/>
+            <TextBox Text="{Binding LastNameTextBox, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
 
             <!-- Rest Interface -->
             <Grid Grid.Column="0">
@@ -62,23 +62,23 @@
         <StackPanel Grid.Row="1" Grid.Column="0" Margin="5,5,5,5">
             <!-- Title TextBox -->
             <TextBlock x:Name="labelTitle" Text="Title"/>
-            <TextBox x:Name="textTitle"/>
+            <TextBox Text="{Binding TitleTextBox, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
             
             <!-- Description TextBox -->
             <TextBlock x:Name="labelDescription" Text="Description"/>
-            <TextBox x:Name="textDescription"/>
+            <TextBox Text="{Binding DescriptionTetBox, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
             
             <!-- Budget NumericTextBox -->
             <TextBlock x:Name="labelBudget" Text="Budget"/>
-            <TextBox x:Name="numericBudget"/>
+            <TextBox Text="{Binding Budget, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
 
             <!-- Rate NumericTextBox -->
             <TextBlock x:Name="labelRate" Text="Rate"/>
-            <TextBox x:Name="numericRate"/>
+            <TextBox Text="{Binding Rate, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
 
             <!-- Datepicker -->
             <TextBlock x:Name="labelDate" Text="ReleaseDate"/>
-            <DatePicker Height="25" HorizontalAlignment="Left" Name="datePicker" VerticalAlignment="Top" />
+            <DatePicker SelectedDate="{Binding ReleaseDateDatePicker}" Height="25" HorizontalAlignment="Left" Name="datePicker" VerticalAlignment="Top" />
 
             <!-- Genre -->
             <TextBlock Text="Genre"/>
@@ -92,15 +92,14 @@
                 </Grid.ColumnDefinitions>
                 
                 <!-- Add Movie Button-->
-                <!--<Button 
+                <Button 
                     Grid.Column="0"
                     Width="100"
                     Height="20"
                     Margin="5,5,5,5"
-                    x:Name="addMovie"
-                    Click="AddMovie_Click"
+                    Command="{Binding AddMovie}"
                     Content="Add"
-                />-->
+                />
 
                 <!-- Remove Movie Button -->
                 <Button 
