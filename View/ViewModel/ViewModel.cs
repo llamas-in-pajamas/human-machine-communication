@@ -102,8 +102,8 @@ namespace View.ViewModel
             Movies = new ObservableCollection<Movie>(){
                 new Movie()
                 {
-                    Title = "Dupa",
-                    Description = "sdfghjk",
+                    Title = "Przykladowy film",
+                    Description = "Przykøadowy tytul",
                     Author = new Author() { FirstName = "Adam", LastName = "Prezes" },
                 }
             };
